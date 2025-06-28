@@ -40,9 +40,9 @@ It follows the Worker Service pattern introduced in .NET Core 8.0.
 ## 💻 Usage
 
 The Worker will check the API called ExampleAPI. The endpoint of the api is already set
-on appsettings.js: ==> ApiSettings:ApiHealthEndpoint.
+on worker appsettings.js in the follow key: ApiSettings:ApiHealthEndpoint.
 
-The worker will run the check every 60 seconds.
+The worker will run the check every 60 seconds in the follow key of worker appsettings.js: WorkerSettings:SecondsDelay.
 
 Run The API called ExampleAPI and the Worker together.
 If you are using Visual Studio, you can configure multiple startup projects.
