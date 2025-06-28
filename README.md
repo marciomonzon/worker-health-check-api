@@ -1,4 +1,4 @@
-# 🛠️ ASP.NET API Health Check Worker (.NET)
+# 🛠️ API Health Check Worker (.NET)
 
 This is a simple .NET Worker Service that periodically checks the health of a API instance and logs the result. 
 It follows the Worker Service pattern introduced in .NET Core 8.0.
