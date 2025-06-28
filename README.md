@@ -32,28 +32,6 @@ More information: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-
 
 ---
 
-## ⚙️ Configuration of the Worker
-
-### `appsettings.json`
-
-```json
-{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.Hosting.Lifetime": "Information"
-    }
-  },
-  "ApiSettings": {
-    "ApiHealthEndpoint": "https://localhost:7286/healthz"
-  },
-  "WorkerSettings": {
-    "SecondsDelay": "60"
-  }
-}
-```
-
-
 ## 🔁 API program.cs
 ```csharp
 
@@ -93,10 +71,31 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
-
-
-
 ```
+---
+
+## ⚙️ Configuration of the Worker
+
+### `appsettings.json`
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "ApiSettings": {
+    "ApiHealthEndpoint": "https://localhost:7286/healthz"
+  },
+  "WorkerSettings": {
+    "SecondsDelay": "60"
+  }
+}
+```
+
+
 ---
 ## 🔁 Worker Example (`ApiHealthCheckerWorker.cs`)
 
