@@ -1,4 +1,4 @@
-# 🛠️ SQL Server Health Check Worker (.NET)
+# 🛠️ ASP.NET API Health Check Worker (.NET)
 
 This is a simple .NET Worker Service that periodically checks the health of a API instance and logs the result. 
 It follows the Worker Service pattern introduced in .NET Core 8.0.
@@ -42,7 +42,7 @@ It follows the Worker Service pattern introduced in .NET Core 8.0.
 The Worker will check the API called ExampleAPI. The endpoint of the api is already set
 on worker appsettings.js in the follow key: ApiSettings:ApiHealthEndpoint.
 
-The worker will run the check every 60 seconds in the follow key of worker appsettings.js: WorkerSettings:SecondsDelay.
+The worker will run the check every 60 seconds. This can be changed in the follow key of worker appsettings.js: WorkerSettings:SecondsDelay.
 
 Run The API called ExampleAPI and the Worker together.
 If you are using Visual Studio, you can configure multiple startup projects.
