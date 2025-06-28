@@ -20,7 +20,9 @@ namespace HealthCheckWorker
                     }
                     else
                     {
-                        _logger.LogWarning("The API is unhealthy. ({StatusCode}) ({Time})", response.StatusCode, DateTimeOffset.Now);
+                        _logger.LogWarning("The API is unhealthy. ({StatusCode}) ({Time})",
+                                           response.StatusCode,
+                                           DateTimeOffset.Now);
                     }
                 }
                 catch (Exception ex)
