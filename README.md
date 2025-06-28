@@ -19,6 +19,19 @@ The Worker is where the process of check happens.
 
 ---
 
+## 💻 Usage
+
+The Worker will check the API called ExampleAPI. The endpoint of the api is already set
+on worker appsettings.js in the follow key: ApiSettings:ApiHealthEndpoint.
+
+The worker will run the check every 60 seconds. This can be changed in the follow key of worker appsettings.js: WorkerSettings:SecondsDelay.
+
+Run The API called ExampleAPI and the Worker together.
+If you are using Visual Studio, you can configure multiple startup projects.
+More information: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2022
+
+---
+
 ## ⚙️ Configuration of the Worker
 
 ### `appsettings.json`
@@ -40,20 +53,7 @@ The Worker is where the process of check happens.
 }
 ```
 
----
 
-## 💻 Usage
-
-The Worker will check the API called ExampleAPI. The endpoint of the api is already set
-on worker appsettings.js in the follow key: ApiSettings:ApiHealthEndpoint.
-
-The worker will run the check every 60 seconds. This can be changed in the follow key of worker appsettings.js: WorkerSettings:SecondsDelay.
-
-Run The API called ExampleAPI and the Worker together.
-If you are using Visual Studio, you can configure multiple startup projects.
-More information: https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2022
-
----
 ## 🔁 API program.cs
 ```csharp
 
