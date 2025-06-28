@@ -147,6 +147,9 @@ builder.Services.AddHostedService<ApiHealthCheckerWorker>();
 var host = builder.Build();
 host.Run();
 ```
+
+---
+
 ## 📌 Notes
 
 - You can expand this worker to report health to an API, email alerts, or retry strategies.
