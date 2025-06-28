@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Http;
+using System.Net;
+
 namespace HealthCheckWorker
 {
     public class ApiHealthCheckerWorker(ILogger<ApiHealthCheckerWorker> _logger,
