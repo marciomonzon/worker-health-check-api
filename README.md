@@ -147,15 +147,6 @@ builder.Services.AddHostedService<ApiHealthCheckerWorker>();
 var host = builder.Build();
 host.Run();
 ```
----
-
-## Diagram
-
-![image](https://github.com/user-attachments/assets/f7235abc-6610-422b-a56d-9802eb4df7d8)
-
-
----
-
 ## 📌 Notes
 
 - You can expand this worker to report health to an API, email alerts, or retry strategies.
